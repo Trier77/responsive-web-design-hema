@@ -2,6 +2,76 @@
 margin: 0;
 }
 
-.body {
-    color: #1F3133;
+body {
+    background-color: #1F3133;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1F3133;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header .navbar ul li a {
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #90081F;
+    display: block;
+    white-space: nowrap;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    display: none;
+    z-index: 999;
+    padding: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+
+
+
+.logo {
+    width: 5vw;
+}
+
+.udstyr {
+    display: flex;
 }
