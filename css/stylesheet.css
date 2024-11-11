@@ -84,4 +84,17 @@ header .navbar ul li:hover > ul {
     display: flex;
     margin-top: 200px;
     margin-left: 100px;
+    color: white;
+    
+}
+
+.boxes img {
+ max-width: 200px;  
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 100px;
 }
