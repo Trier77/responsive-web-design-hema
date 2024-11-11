@@ -1,5 +1,6 @@
 *{
 margin: 0;
+padding: 0;
 }
 
 body {
@@ -63,6 +64,10 @@ header .navbar ul li ul li {
 
 header .navbar ul li:hover > ul {
     display: block;
+}
+
+header .navbar ul li a:hover {
+    color: #fff;
 }
 
 
