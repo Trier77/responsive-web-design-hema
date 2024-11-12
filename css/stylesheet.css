@@ -161,10 +161,7 @@ header .navbar .burger img{
     display:block;
 }
 
-header nav{
-display: grid;
 
-}
     /* Skjul navigationselementerne som standard */
     header .navbar ul {
         display: none;
