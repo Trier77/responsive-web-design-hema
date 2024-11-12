@@ -1,0 +1,9 @@
+/* Hide the paragraph by default */
+#toggle-paragraph {
+    display: none;
+}
+
+/* Show the paragraph when the checkbox is checked */
+#toggle-checkbox:checked + p {
+    display: block;
+}
