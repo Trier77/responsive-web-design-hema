@@ -74,6 +74,10 @@ header .navbar ul li a:hover {
 .logo {
     width: 9vw;
 }
+
+header .navbar .burger{
+    display:none;
+}
 /*---------------------------------Navnar End-------------------------------------*/
 
 
@@ -147,6 +151,27 @@ header .navbar ul li a:hover {
 .op-logo {
     align-items: center;
 }
+
+.burger{
+    display:block;
+}
+
+    /* Skjul navigationselementerne som standard */
+    header .navbar ul {
+        display: none;
+        flex-direction: column; /* Vertikal menu */
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 100%; /* Lige under header */
+        left: 0;
+        z-index: 999;
+    }
+
+    /* Vis navigationselementerne, når checkboxen er markeret */
+    #menu-toggle:checked + .burger + ul {
+        display: flex; /* Gør menuen synlig */
+    }
 
 
 
