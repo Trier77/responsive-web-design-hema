@@ -75,8 +75,13 @@ header .navbar ul li a:hover {
     width: 9vw;
 }
 
-header .navbar .burger{
+.burger, #menu-toggle{
     display:none;
+
+}
+
+header .navbar .burger img{
+    width: 5%;
 }
 /*---------------------------------Navnar End-------------------------------------*/
 
@@ -156,16 +161,20 @@ header .navbar .burger{
     display:block;
 }
 
+header nav{
+display: grid;
+
+}
     /* Skjul navigationselementerne som standard */
     header .navbar ul {
         display: none;
         flex-direction: column; /* Vertikal menu */
-        align-items: flex-end;
+        
         width: 100%;
         background-color: #000;
         position: absolute;
         top: 100%; /* Lige under header */
-        left: 0;
+        right:0 ;
         z-index: 999;
         border: #fff;
     }
