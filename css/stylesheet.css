@@ -134,6 +134,31 @@ header .navbar .burger img{
 
 
 /*-------------------------------Discipliner-------------------------------------*/
+
+.svær-article {
+    display: flex;
+    color: white;
+    margin-top: 15px;
+    margin: 10px;
+    
+}
+
+.svær-article li{
+    border: 5px;
+    border-color: #90081F;
+    
+}
+
+.svær-billede{
+    transform: rotate(-90deg);
+    
+
+}
+
+
+#toggle-kaarde, #toggle-tohandssvaerd, #toggle-sabel{
+    display: none;
+}
 /* Hide the paragraph by default */
 .dropdown-content {
     display: none;
@@ -141,6 +166,16 @@ header .navbar .burger img{
 
 /* Show the paragraph when the checkbox is checked */
 #toggle-kaarde:checked + .dropdown-content {
+    display: block;
+
+}
+
+#toggle-tohandssvaerd:checked + .dropdown-content {
+    display: block;
+
+}
+
+#toggle-sabel:checked + .dropdown-content {
     display: block;
 
 }
