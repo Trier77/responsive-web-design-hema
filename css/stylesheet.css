@@ -196,9 +196,18 @@ header .navbar .burger img{
 
 /*-------------------------------Ingibjørg-------------------------------------*/
 
+.svær-article {
+    display: flex;
+    color: white;
+    margin-top: 15px;
+    margin: 10px;
+}
 
 
-
+.svær-billede {
+    transform: rotate(-90deg);
+    max-width: 90px;
+}
 
 
 
