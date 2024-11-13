@@ -266,7 +266,16 @@ header .navbar .burger img{
 .kommende-be{
     margin-left: 25px;
     margin-right: 35px;
+    margin-top: 15px;
 
+}
+
+.kommende-be a {
+    color: #90081F;
+}
+
+.kommende-be p {
+    font-size: 20px;
 }
 
 .hurtige-box{
@@ -277,6 +286,11 @@ header .navbar .burger img{
     margin-left: 25px;
     
 }
+.hurtige-box p {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
 
 .overskrift {
     color: #90081F;
@@ -287,6 +301,11 @@ header .navbar .burger img{
     height: 210px; /* Angiv den ønskede højde */
     object-fit: cover; /* Fylder rammen og beskærer billedet */
     object-position: top; /* Centrerer billedet i rammen */
+}
+
+.lp-om-hema a {
+    color: #90081F;
+    margin-bottom: 999px;
 }
 
 .op-logo-lp {
@@ -318,6 +337,9 @@ header .navbar .burger img{
     margin-top: 200px;
     margin-left: 100px;
     color: white;
+    border-left: 0.4rem solid #90081F;
+    padding-left: 10px;
+
     
 }
 
