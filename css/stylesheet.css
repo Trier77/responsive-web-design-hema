@@ -199,24 +199,32 @@ header .navbar .burger img{
 
 /*-------------------------------Discipliner-------------------------------------*/
 
-.svær-article {
-    display: flex;
+.svaer-article {
+    list-style-type: none;
     color: white;
-    margin-top: 15px;
-    margin: 10px;
+   
+    margin:0.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding-bottom: 5rem;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
     
     
 }
 
-.svær-article li{
-    border: 5px;
-    border-color: #90081F;
+.svaer-article li{
+    border: 0.15rem solid #90081F;
+    background-color: #11212d;
+   
+
     
 }
 
-.svær-billede{
+.svaer-billede{
     transform: rotate(-90deg);
-    
+    width: 20rem;
 
 }
 
@@ -305,6 +313,10 @@ header .navbar .burger img{
 
 
 
+    
+
+
+
 
 
 
@@ -313,16 +325,16 @@ header .navbar .burger img{
 
 /*-------------------------------Ingibjørg-------------------------------------*/
 
-.svær-article {
-    display: flex;
-    color: white;
-    margin-top: 15px;
-    margin: 10px;
+.svaer-article {
+               
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    
 }
 
-.svær-billede {
-    transform: rotate(-90deg);
-    max-width: 90px;
+.svaer-billede {
+    transform: rotate(0deg);
+    max-width: 100vw;
 }
 
 

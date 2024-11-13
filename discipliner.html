@@ -9,11 +9,15 @@
 <body>
     <header>
         <!--navigation bar, logo,-->
-        <h1>
-            <a href="index.html">
-            <img class="logo" src="img/logo.webp" alt="hema danmark"></a>
-        </h1>
+        <picture>
+            <a href="index.html"></a>
+            <img class="logo" src="img/logo.webp" alt="hema danmark">
+        </picture>
         <nav class="navbar">
+          <input type="checkbox" id="menu-toggle" >
+            <label for="menu-toggle" class="burger">
+                <img src="img/burger-menu-svgrepo-com.svg" alt="burger-menu-ikon">
+            </label>
             <ul>
                 <li> <a href="#">HEMA+</a>
                     <ul>
@@ -41,22 +45,23 @@
 
             <h2>Discipliner</h2>
             <nav class="svær-linfo">
-                <ul class="svær-article">
-                    <li>
+                <ul class="svaer-article">
+                  
+                    <li class="svaer-kasse1">
                         
-                        
-                        <label for="toggle-kaarde"><img src="img/kårde.webp" alt="" class="svær-billede">Kårde<input type="checkbox" id="toggle-kaarde">                            
+                      
+                        <label for="toggle-kaarde"><img src="img/kårde.webp" alt="" class="svaer-billede"><h4>Kårde</h4><input type="checkbox" id="toggle-kaarde">                            
                             <article class="dropdown-content">
-                                <h4>Kårde</h4>
+                                
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At tenetur repudiandae autem dolores eos dolorem odio nihil minima deserunt perferendis possimus, distinctio accusamus ut. Nobis asperiores sit totam, dolores praesentium ab voluptas quam doloribus fuga nostrum delectus quibusdam quos architecto a eligendi expedita facere. Quo suscipit pariatur eligendi quisquam rerum!</p>                          
                             </article>
                         </label>      
                         
                     </li>
 
-                    <li>
+                    <li class="svaer-kasse2">
                         
-                        <label for="toggle-tohandssvaerd"><img src="img/kårde.webp" alt="" class="svær-billede">Tohåndssværd<input type="checkbox" id="toggle-tohandssvaerd">
+                        <label for="toggle-tohandssvaerd"><img src="img/kårde.webp" alt="" class="svaer-billede">Tohåndssværd<input type="checkbox" id="toggle-tohandssvaerd">
                             <article class="dropdown-content">
                             <h4>Tohåndssværd</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At tenetur repudiandae autem dolores eos dolorem odio nihil minima deserunt perferendis possimus, distinctio accusamus ut. Nobis asperiores sit totam, dolores praesentium ab voluptas quam doloribus fuga nostrum delectus quibusdam quos architecto a eligendi expedita facere. Quo suscipit pariatur eligendi quisquam rerum!</p>
@@ -65,9 +70,9 @@
                                                     
                     </li>
 
-                    <li>
+                    <li class="svaer-kasse3">
                         
-                        <label for="toggle-sabel"><img src="img/kårde.webp" alt="" class="svær-billede">Sabel<input type="checkbox" id="toggle-sabel">
+                        <label for="toggle-sabel"><img src="img/kårde.webp" alt="" class="svaer-billede">Sabel<input type="checkbox" id="toggle-sabel">
                             <article class="dropdown-content">
                             <h4>Sabel</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At tenetur repudiandae autem dolores eos dolorem odio nihil minima deserunt perferendis possimus, distinctio accusamus ut. Nobis asperiores sit totam, dolores praesentium ab voluptas quam doloribus fuga nostrum delectus quibusdam quos architecto a eligendi expedita facere. Quo suscipit pariatur eligendi quisquam rerum!</p>
@@ -75,6 +80,7 @@
                         </label>                      
                                                    
                     </li>
+                  
                 </ul>  
             </nav>
 
