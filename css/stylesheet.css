@@ -87,7 +87,9 @@ header .navbar .burger img{
 }
 /*---------------------------------Navnar End-------------------------------------*/
 
-
+*h2{
+    text-decoration: 0.5rem solid  #90081F;
+}
 
 .op-logo {
     display: flex;

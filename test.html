@@ -9,11 +9,15 @@
 <body>
     <header>
         <!--navigation bar, logo,-->
-        <h1>
+        <picture>
             <a href="index.html"></a>
-            <img class="logo"  src="img/logo.webp" alt="hema danmark">
-        </h1>
+            <img class="logo" src="img/logo.webp" alt="hema danmark">
+        </picture>
         <nav class="navbar">
+          <input type="checkbox" id="menu-toggle" >
+            <label for="menu-toggle" class="burger">
+                <img src="img/burger-menu-svgrepo-com.svg" alt="burger-menu-ikon">
+            </label>
             <ul>
                 <li> <a href="#">HEMA+</a>
                     <ul>
@@ -43,7 +47,7 @@
             <nav class="svær-linfo">
                 <ul class="svaer-article">
                   
-                    <li>
+                    <li class="svaer-kasse1">
                         
                       
                         <label for="toggle-kaarde"><img src="img/kårde.webp" alt="" class="svaer-billede"><h4>Kårde</h4><input type="checkbox" id="toggle-kaarde">                            
@@ -55,7 +59,7 @@
                         
                     </li>
 
-                    <li>
+                    <li class="svaer-kasse2">
                         
                         <label for="toggle-tohandssvaerd"><img src="img/kårde.webp" alt="" class="svaer-billede">Tohåndssværd<input type="checkbox" id="toggle-tohandssvaerd">
                             <article class="dropdown-content">
@@ -66,7 +70,7 @@
                                                     
                     </li>
 
-                    <li>
+                    <li class="svaer-kasse3">
                         
                         <label for="toggle-sabel"><img src="img/kårde.webp" alt="" class="svaer-billede">Sabel<input type="checkbox" id="toggle-sabel">
                             <article class="dropdown-content">

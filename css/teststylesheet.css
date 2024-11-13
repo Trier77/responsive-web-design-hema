@@ -95,6 +95,8 @@
         align-items: center;
         justify-content: center;
         color: #90081F;
+        padding-bottom: 5rem;
+        padding-top: 2rem;
         
     }
     
@@ -130,6 +132,11 @@
         margin-right: 100px;
         margin-left: 100px;
     }
+
+    
+    h2{
+        text-decoration: 0.5rem overline #90081F;;
+    }
     
     
     
@@ -138,25 +145,31 @@
     
    
     .svaer-article {
+        list-style-type: none;
         color: white;
+       
         margin:0.5%;
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        
         padding-bottom: 5rem;
-        grid-row-gap: 2rem;
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
         
         
     }
     
     .svaer-article li{
-        border: 50px;
-        border-color: #90081F;
+        border: 0.15rem solid #90081F;
+        background-color: #11212d;
+       
+
         
     }
     
     .svaer-billede{
         transform: rotate(-90deg);
-        
+        width: 20rem;
     
     }
     
@@ -204,12 +217,7 @@
     
     @media (max-width: 400px) {
     
-    .op-logo {
-        align-items: center;
-        margin-top: 40px;
-        
-    
-    }
+   
     
     
     .burger{
@@ -256,6 +264,7 @@
     .svaer-article {
                
         grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         
     }
     
