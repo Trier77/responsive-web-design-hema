@@ -283,8 +283,14 @@ header .navbar .burger img{
 }
 
 .hurtige-img {
-    max-width: 250px;
-    align-items: center;
+    width: 340px; /* Angiv den ønskede bredde */
+    height: 210px; /* Angiv den ønskede højde */
+    object-fit: cover; /* Fylder rammen og beskærer billedet */
+    object-position: top; /* Centrerer billedet i rammen */
+}
+
+.op-logo-lp {
+    max-width: 220px;
 }
 
 
