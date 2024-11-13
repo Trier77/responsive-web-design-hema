@@ -202,6 +202,13 @@ header .navbar .burger img{
 
 .op-logo {
     align-items: center;
+    margin-top: 40px;
+    
+
+}
+
+.op-logo-lp {
+    align-items: center;
 }
 
 .burger{
@@ -252,11 +259,108 @@ header .navbar .burger img{
     margin: 10px;
 }
 
-
 .svær-billede {
     transform: rotate(-90deg);
     max-width: 90px;
 }
+
+
+.hurtige-box{
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+}
+
+.hurtige-img {
+    margin-left: 25px;
+    max-width: 250px;
+}
+
+.hurtige {
+    margin-left: 25px;
+    max-width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------karosel------------------------------------------*/
+.slider {
+    width: 100%;
+    border: 1px solid red;
+    height: var(--height);
+
+.slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+
+}
+.slider.list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+}
+.slider.list .item img {
+    width: 100%;
+
+}
+@keyframes autoRun {
+    form {
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+
+}
+/*--------------------------------karosel slut------------------------------------------*/
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
