@@ -263,6 +263,8 @@ header .navbar .burger img{
 }
 
 
+/*-------------------------------LP-------------------------------------*/
+
 .kommende-be{
     margin-left: 25px;
     margin-right: 35px;
@@ -322,6 +324,8 @@ header .navbar .burger img{
     height: auto;
 }
 
+/*-------------------------------udstyr-------------------------------------*/
+
 .boxes {
     display: flex;
     margin-top: 100px;
@@ -331,20 +335,9 @@ header .navbar .burger img{
     
 }
 
-.boxes2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    margin-left: 100px;
-    color: white;
-    border-left: 0.4rem solid #90081F;
-    padding-left: 10px;
-
-    
-}
 
 .boxes img {
- max-width: 130px;  
+ max-width: 100px;  
  margin-left: 20px;
 
 }
@@ -365,15 +358,34 @@ border-left: #90081F;
 
 
 
+/*-------------------------------bluboversigt-------------------------------------*/
 
 
+.land {
+    display: flex;
+    justify-items: center;
+    margin-top: 49px;
+    margin-left: 40vw;
+    color: #90081F;
+    font-size: 25px;
+}
 
 
+.boxes2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    border-left: 0.4rem solid #90081F;
+    padding-left: 10px;
+}
 
 
-
-
-
+.boxes2 a {
+color: #90081F;
+}
 
 
 
