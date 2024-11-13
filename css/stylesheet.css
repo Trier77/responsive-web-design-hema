@@ -207,9 +207,6 @@ header .navbar .burger img{
 
 }
 
-.op-logo-lp {
-    align-items: center;
-}
 
 .burger{
     display:flex;
@@ -265,21 +262,30 @@ header .navbar .burger img{
 }
 
 
+.kommende-be{
+    margin-left: 25px;
+    margin-right: 35px;
+
+}
+
 .hurtige-box{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
     margin-right: 35px;
+    margin-left: 25px;
+    
+}
+
+.overskrift {
+    color: #90081F;
 }
 
 .hurtige-img {
-    margin-left: 25px;
     max-width: 250px;
+    align-items: center;
 }
 
-.hurtige {
-    margin-left: 25px;
-    max-width: 250px;
-}
 
 
 
