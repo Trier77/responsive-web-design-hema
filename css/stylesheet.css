@@ -95,13 +95,63 @@ header .navbar .burger img{
     align-items: center;
     justify-content: center;
     color: #90081F;
+    margin-top: 40px;
     
 }
 
 .op-logo .sigil {
     width: 20vw;
 }
+/*-------------------------------lp-------------------------------------*/
 
+.kommende-be{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 15px;
+}
+
+.kommende-be a {
+    color: #90081F;
+}
+
+.kommende-be p {
+    font-size: 20px;
+}
+
+.hurtige-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.hurtige-box p {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-right: 120px;
+}
+
+.hurtige-img {
+    max-width: 80%;
+    margin-left: 120px;
+}
+
+.overskrift {
+    color: #90081F;
+}
+
+
+
+.lp-om-hema a {
+    color: #90081F;
+    margin-bottom: 999px;
+}
+
+.op-logo-lp {
+    max-width: 220px;
+}
+
+
+/*-------------------------------lp slit-------------------------------------*/
+/*-------------------------------udstyr-------------------------------------*/
 
 .boxes {
     display: flex;
@@ -122,17 +172,28 @@ header .navbar .burger img{
 
 .boxes img {
  max-width: 200px;  
+ margin-left: 300px;
 }
 
 .box-text {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 300px;
     margin-left: 100px;
 }
 
 
 
+.infografik-img {
+    align-items: center;
+    margin: 50px;
+    margin-left: 450px;
+    margin-top: 40px;
+    max-width: 80%;
+    height: auto;
+}
+
+/*-------------------------------udstyr end-------------------------------------*/
 
 /*-------------------------------Discipliner-------------------------------------*/
 
@@ -317,6 +378,9 @@ header .navbar .burger img{
 
 
 
+
+
+/*-------------------------------udstyr-------------------------------------*/
 .infografik-img {
     align-items: center;
     margin: 50px;
@@ -324,7 +388,6 @@ header .navbar .burger img{
     height: auto;
 }
 
-/*-------------------------------udstyr-------------------------------------*/
 
 .boxes {
     display: flex;
