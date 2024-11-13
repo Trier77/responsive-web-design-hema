@@ -187,12 +187,12 @@ header .navbar .burger img{
 
 
 .infografik-img {
-    align-items: center;
+ /*   align-items: center;
     margin: 50px;
     margin-left: 450px;
     margin-top: 40px;
     max-width: 80%;
-    height: auto;
+    height: auto;*/
 }
 
 /*-------------------------------udstyr end-------------------------------------*/
@@ -395,11 +395,17 @@ header .navbar .burger img{
 
 
 /*-------------------------------udstyr-------------------------------------*/
+
+.udstyr-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .infografik-img {
-    align-items: center;
-    margin: 50px;
-    max-width: 80%;
-    height: auto;
+    
+    
+    max-width: 20%;
+    
 }
 
 
@@ -408,6 +414,7 @@ header .navbar .burger img{
     margin-top: 100px;
     margin-left: 5px;
     color: white;
+    max-width: 10%;
 
     
 }
