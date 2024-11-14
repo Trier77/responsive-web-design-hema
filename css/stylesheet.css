@@ -36,6 +36,7 @@ header .navbar ul li {
     margin: 0;
     padding: 0;
     position: relative;
+    
 }
 
 header .navbar ul li a {
@@ -51,17 +52,17 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     top: 100%;
-    width: 200px;
+    width:200px;
     display: none;
     z-index: 999;
     padding: 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
 
 }
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid #ccc;
+    border-top: 0.05rem solid #ccc;
 }
 
 header .navbar ul li:hover > ul {
@@ -70,6 +71,7 @@ header .navbar ul li:hover > ul {
 
 header .navbar ul li a:hover {
     color: #fff;
+    
 }
 
 
@@ -329,25 +331,68 @@ header .navbar .burger img{
         display: none;
         flex-direction: column; /* Vertikal menu */
         
-        width: 100%;
+        width:200px;
         background-color: #000;
         position: absolute;
         top: 100%; /* Lige under header */
         right:0 ;
         z-index: 999;
-        border: #fff;
+       
     }
 
     header .navbar ul li{
-        border: #fff, 5px;
+        
+        border-bottom: 0.1rem solid #90081F;
+        width: 100%;
+        
+    }
+    header .navbar ul .guide-container{
+        border-bottom: 0.1rem solid #ccc;
+        border-top: 0.1rem solid #ccc;
+    }
+
+    header .navbar ul li ul{
+        
+        top:0;
+        left: auto;
+        right: 100%;
+        border-top: none;
+        width: fit-content;
+        
+    }
+    
+
+    header .navbar ul li ul li{
+        border-top: none;
+        
+    }
+    header .navbar ul li ul .historie-container{
+        border-top: 0.1rem solid #ccc;
+        border-bottom: 0.1rem solid #90081F;
+        
+        border-left: 0.1rem solid #ccc;
+        
+    }
+
+    header .navbar ul li ul .disci-container{
+        border-right:0.1rem solid #ccc;
+        border-left: 0.1rem solid #ccc;
+        border-top: none;
+        border-bottom: 0.1rem solid #ccc;
+
     }
 
     
     /* Vis navigationselementerne, når checkboxen er markeret */
-    #menu-toggle:checked + .burger + ul {
+    #menu-toggle:checked + .burger + ul{
         display: flex; /* Gør menuen synlig */
         align-items: flex-end;
+        
+        
+        
     }
+
+    
 
 
 
