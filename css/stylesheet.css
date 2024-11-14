@@ -177,7 +177,7 @@ header .navbar .burger img{
 
 .boxes img {
  max-width: 200px;  
- margin-left: 300px;
+ 
 }
 
 .box-text {
@@ -186,7 +186,7 @@ header .navbar .burger img{
     margin-right: 300px;
     margin-left: 100px;
 }
-.infografik{
+.udstyr-container .infografik{
     display: flex;
     justify-content: center;
 }
@@ -434,7 +434,10 @@ header .navbar .burger img{
 
 /*-------------------------------udstyr-------------------------------------*/
 
-
+.udstyr-container .infografik{
+    display: flex;
+    justify-content: center;
+}
 
 
 
