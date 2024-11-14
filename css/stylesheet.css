@@ -155,10 +155,13 @@ header .navbar .burger img{
 /*-------------------------------lp slit-------------------------------------*/
 /*-------------------------------udstyr-------------------------------------*/
 
+.udstyr-container{
+    display: flex;
+    flex-direction: column;
+}
 .boxes {
     display: flex;
-    margin-top: 200px;
-    margin-left: 100px;
+    
     color: white;
     
 }
@@ -183,16 +186,15 @@ header .navbar .burger img{
     margin-right: 300px;
     margin-left: 100px;
 }
+.infografik{
+    display: flex;
+    justify-content: center;
+}
 
 
 
 .infografik-img {
- /*   align-items: center;
-    margin: 50px;
-    margin-left: 450px;
-    margin-top: 40px;
-    max-width: 80%;
-    height: auto;*/
+    max-width: 20rem;
 }
 
 /*-------------------------------udstyr end-------------------------------------*/
@@ -432,33 +434,30 @@ header .navbar .burger img{
 
 /*-------------------------------udstyr-------------------------------------*/
 
-.udstyr-container{
-    display: flex;
-    flex-direction: column;
-}
 
-.infografik-img {
-    
-    
-    max-width: 20%;
-    
+
+
+
+.infografik-img {       
+    max-width: 80%;    
 }
 
 
 .boxes {
     display: flex;
-    margin-top: 100px;
-    margin-left: 5px;
+    flex-direction: column;
+    margin-top: 7.5rem;
+    margin-left: 2vw;
     color: white;
-    max-width: 10%;
+    max-width: 90%;
 
     
 }
 
 
 .boxes img {
- max-width: 100px;  
- margin-left: 20px;
+    max-width: 7.5rem;
+    margin-left: 3vw;
 
 }
 .boxes-img {
@@ -473,6 +472,15 @@ border-left: #90081F;
     margin-left: 20px;
     border-left: 0.4rem solid #90081F;
     padding-left: 10px;
+}
+
+.boxes .udstyr-svaerd{
+    
+    transform: rotate(-90deg);
+    width: 15%;
+    margin-left: 35%;
+    
+    
 }
 
 
