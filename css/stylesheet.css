@@ -4,25 +4,29 @@ padding: 0;
 box-sizing: border-box;
 }
 
+/*Bagrundsfarve*/
 body {
     background: linear-gradient(to bottom, #000 0%, #121d1f 33%, #131a20 66%, #000 100%);
     color: white;
+    margin: 2%;
 }
 
+/*headerens udseende og placering*/
 header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     background:  #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 1px 7%;
+    
+    padding: 0 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 }
 /*----------------------------------Navnar-------------------------------------*/
+/*navigationsbarens layout og funktion*/
 nav {
     display: block;
     unicode-bidi: isolate;
@@ -40,9 +44,9 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    padding: 18px 20px;
+    padding: 0 1.5rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #90081F;
     display: block;
     white-space: nowrap;
@@ -52,7 +56,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     top: 100%;
-    width:200px;
+    width:fit-content;
     display: none;
     z-index: 999;
     padding: 0;
@@ -63,8 +67,11 @@ header .navbar ul li ul {
 header .navbar ul li ul li {
     width: 100%;
     border-top: 0.05rem solid #ccc;
+    padding: 1vw 0;
+
 }
 
+/*aktivering af under-menuen i HEMA+*/
 header .navbar ul li:hover > ul {
     display: block;
 }
@@ -74,23 +81,25 @@ header .navbar ul li a:hover {
     
 }
 
-
+/*ikonet i venstre hjørnes størrelse*/
 .logo {
     width: 9vw;
 }
-
+/*aktivering af checkbox i burgermenuen*/
 .burger, #menu-toggle{
     display:none;
 
 }
-
+/*burgermenu-ikonets størrelse*/
 header .navbar .burger img{
     width: 5%;
 }
 /*---------------------------------Navnar End-------------------------------------*/
 
-*h2{
-    text-decoration: 0.5rem solid  #90081F;
+h2{
+    text-decoration: overline 0.3rem solid  #90081F;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .op-logo {
@@ -109,9 +118,9 @@ header .navbar .burger img{
 /*-------------------------------lp-------------------------------------*/
 
 .kommende-be{
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 15px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5%;
 }
 
 .kommende-be a {
@@ -119,23 +128,27 @@ header .navbar .burger img{
 }
 
 .kommende-be p {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .hurtige-box{
     display: flex;
-    flex-direction: row;
-    margin-top: 40px;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 .hurtige-box p {
-    font-size: 20px;
-    margin-top: 12px;
-    margin-right: 130px;
+    font-size: 1.5rem;
+    margin-top: 3vw;
+    max-width: 90%;
+    
 }
 
 .hurtige-img {
-    max-width: 80%;
-    margin-left: 120px;
+    width: 50rem;
+    max-width: 600px;
+    
 }
 
 .overskrift {
@@ -149,9 +162,7 @@ header .navbar .burger img{
     margin-bottom: 999px;
 }
 
-.op-logo-lp {
-    max-width: 220px;
-}
+
 
 
 /*-------------------------------lp slit-------------------------------------*/
@@ -160,25 +171,25 @@ header .navbar .burger img{
 .udstyr-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .boxes {
     display: flex;
-    
+    justify-content: center;
+    margin-top: 7.5rem;
+    /*margin-left: 2vw;*/
     color: white;
+    max-width: 90%;
+
     
 }
 
-.boxes2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    margin-left: 100px;
-    color: white;
-    
-}
+
 
 .boxes img {
- max-width: 200px;  
+    max-width: 7.5rem;
+    /*margin-left: 3vw;*/
+    
  
 }
 
@@ -186,7 +197,9 @@ header .navbar .burger img{
     display: flex;
     flex-direction: column;
     margin-right: 300px;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
+    border-left: 0.4rem solid #90081F;
+    padding-left: 10px;
 }
 .udstyr-container .infografik{
     display: flex;
@@ -199,6 +212,11 @@ header .navbar .burger img{
     max-width: 20rem;
 }
 
+
+
+
+
+
 /*-------------------------------udstyr end-------------------------------------*/
 
 
@@ -206,13 +224,17 @@ header .navbar .burger img{
 .klub-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+    
+    width: 70vw;
+    max-width: 500px;
+    
+    
    
 }
+
+
+
+/*-------------------------------Klubber-------------------------------------*/
 
 .map-container {
     position: relative;
@@ -220,6 +242,7 @@ header .navbar .burger img{
     padding-top: 56.25%; /* 16:9 aspect ratio */
     overflow: hidden;
     border-radius: 10px;
+    
    
 }
 
@@ -232,7 +255,44 @@ header .navbar .burger img{
     border: none;
 }
 
+.boxes2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    /*margin-left: 100px;*/
+    color: white;
+    
+}
 
+
+.land {
+   
+    margin-top: 3rem;
+    
+    color: #90081F;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+.boxes2 {
+    width: 100%;
+    
+    margin-top: 15%;
+    margin-left: 10%;
+    padding: 1%;
+    border-left: 0.4rem solid #90081F;    
+}
+
+
+.boxes2 a {
+color: #90081F;
+}
+
+/*-------------------------------klubber slut-------------------------------------*/
 
 
 
@@ -304,15 +364,39 @@ header .navbar .burger img{
 
 
 
-
-
-
 /*-------------------------------to mobile-------------------------------------*/
 /*-------------------------------jacob-------------------------------------*/
 
+@media (max-width: 1000px){
+
+    header .navbar ul li a{
+    font-size: 2vw;
+    padding: 0 2vw;
+    
+    }
+
+    .hurtige-img {
+        width: 50vw
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
 @media (max-width: 400px) {
 
-.op-logo {
+.header{
+    padding: 0 10%;
+}
+
+    .op-logo {
     align-items: center;
     margin-top: 40px;
     
@@ -331,7 +415,7 @@ header .navbar .burger img{
         display: none;
         flex-direction: column; /* Vertikal menu */
         
-        width:200px;
+        width:50%;
         background-color: #000;
         position: absolute;
         top: 100%; /* Lige under header */
@@ -346,6 +430,11 @@ header .navbar .burger img{
         width: 100%;
         
     }
+    header .navbar ul li a{
+        font-size: 100%;
+        padding: 10% 0;
+        
+        }
     header .navbar ul .guide-container{
         border-bottom: 0.1rem solid #ccc;
         border-top: 0.1rem solid #ccc;
@@ -358,12 +447,14 @@ header .navbar .burger img{
         right: 100%;
         border-top: none;
         width: fit-content;
+       
         
     }
     
 
     header .navbar ul li ul li{
         border-top: none;
+        
         
     }
     header .navbar ul li ul .historie-container{
@@ -539,7 +630,7 @@ border-left: #90081F;
 .klub-container{
     display: flex;
     flex-direction: column;
-    
+    width: 100vw;
     
     
     
