@@ -96,19 +96,25 @@ header .navbar .burger img{
 }
 /*---------------------------------Navnar End-------------------------------------*/
 
+h1{
+    font-size: 10vw;
+}
+
+/*dekoration af h2'er*/
 h2{
     text-decoration: overline 0.3rem solid  #90081F;
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
+/*logo i både top og bund*/
 .op-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #90081F;
-    margin-top: 40px;
+    margin-top: 5vw;
     
 }
 
@@ -116,7 +122,7 @@ h2{
     width: 20vw;
 }
 /*-------------------------------lp-------------------------------------*/
-
+/*landingpage elementer*/
 .kommende-be{
     margin-left: 15vw;
     margin-right: 15vw;
@@ -131,6 +137,7 @@ h2{
     font-size: 1.5rem;
 }
 
+/*billede og tekst til "5 hurtige om HEMA"*/
 .hurtige-box{
     display: flex;
     flex-direction: row-reverse;
@@ -172,12 +179,25 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+/*infographic*/
+.udstyr-container .infografik{
+    display: flex;
+    justify-content: center;
+    margin-top:2rem ;
+}
+
+.infografik-img {
+    max-width: 80vw;
+}
+
+/*alle udstyr faktabokse*/
 .boxes {
     display: flex;
     justify-content: center;
     margin-top: 7.5rem;
-    /*margin-left: 2vw;*/
+    margin-left: 2vw;
     color: white;
     max-width: 90%;
 
@@ -188,7 +208,7 @@ h2{
 
 .boxes img {
     max-width: 7.5rem;
-    /*margin-left: 3vw;*/
+    margin-right: 3vw;
     
  
 }
@@ -196,21 +216,16 @@ h2{
 .box-text {
     display: flex;
     flex-direction: column;
-    margin-right: 300px;
+    /*margin-right: 300px;*/
     /*margin-left: 100px;*/
     border-left: 0.4rem solid #90081F;
-    padding-left: 10px;
-}
-.udstyr-container .infografik{
-    display: flex;
-    justify-content: center;
+    padding-left: 1rem;
 }
 
 
 
-.infografik-img {
-    max-width: 20rem;
-}
+
+
 
 
 
@@ -221,21 +236,21 @@ h2{
 
 
 
+
+/*-------------------------------Klubber-------------------------------------*/
+
 .klub-container {
     display: flex;
     flex-direction: column;
     
     width: 70vw;
-    max-width: 500px;
+    
     
     
    
 }
 
-
-
-/*-------------------------------Klubber-------------------------------------*/
-
+/*map*/
 .map-container {
     position: relative;
     width: 100%;
@@ -249,12 +264,13 @@ h2{
 .map-container iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    left: auto;
     width: 100%;
     height: 100%;
     border: none;
 }
 
+/*faktabokse*/
 .boxes2 {
     display: flex;
     flex-direction: column;
@@ -264,7 +280,7 @@ h2{
     
 }
 
-
+/*regioner*/
 .land {
    
     margin-top: 3rem;
@@ -298,7 +314,7 @@ color: #90081F;
 
 
 /*-------------------------------Discipliner-------------------------------------*/
-
+/*de tre sværdknapper*/
 .svaer-article {
     list-style-type: none;
     color: white;
@@ -328,7 +344,7 @@ color: #90081F;
 
 }
 
-
+/*dropdown-funktion til knapperne*/
 #toggle-kaarde, #toggle-tohandssvaerd, #toggle-sabel{
     display: none;
 }
@@ -364,17 +380,19 @@ color: #90081F;
 
 
 
-/*-------------------------------to mobile-------------------------------------*/
-/*-------------------------------jacob-------------------------------------*/
+
+/*-------------------------------mellem breakpoint-------------------------------------*/
 
 @media (max-width: 1000px){
 
+    /*ændring i skalering af navbar'en*/
     header .navbar ul li a{
     font-size: 2vw;
     padding: 0 2vw;
     
     }
 
+    /*ændring i skalering af fægter-billedet på landing page*/
     .hurtige-img {
         width: 50vw
         
@@ -389,21 +407,27 @@ color: #90081F;
 
 
 
-
+/*-------------------------------mobil breakpoint-------------------------------------*/
 @media (max-width: 400px) {
 
+    
+
+/*ændring af udseende af header'en*/
 .header{
     padding: 0 10%;
 }
 
-    .op-logo {
+
+.op-logo {
     align-items: center;
     margin-top: 40px;
     
 
 }
 
+/*-------------------------------navbar-------------------------------------*/
 
+/*burgermenu bliver aktiveret*/
 .burger{
     display:flex;
     justify-content: flex-end;
@@ -424,6 +448,7 @@ color: #90081F;
        
     }
 
+    /*overhaul af udseende til navbar'en*/
     header .navbar ul li{
         
         border-bottom: 0.1rem solid #90081F;
@@ -474,7 +499,7 @@ color: #90081F;
     }
 
     
-    /* Vis navigationselementerne, når checkboxen er markeret */
+    /* Viser navigationselementerne, når checkboxen er markeret */
     #menu-toggle:checked + .burger + ul{
         display: flex; /* Gør menuen synlig */
         align-items: flex-end;
@@ -483,7 +508,7 @@ color: #90081F;
         
     }
 
-    
+    /*-------------------------------navbar slut-------------------------------------*/
 
 
 
@@ -495,9 +520,9 @@ color: #90081F;
 
 
 
+/*-------------------------------discipliner-------------------------------------*/
 
-
-/*-------------------------------Ingibjørg-------------------------------------*/
+/*ændring af sværdknappernes proportioner*/
 
 .svaer-article {
                
@@ -511,9 +536,12 @@ color: #90081F;
     max-width: 100vw;
 }
 
+/*-------------------------------discipliner slut-------------------------------------*/
+
 
 /*-------------------------------LP-------------------------------------*/
 
+/*ændring af størrelse og placering af elemnterne på landing page*/
 .kommende-be{
     margin-left: 25px;
     margin-right: 35px;
@@ -570,6 +598,7 @@ color: #90081F;
 
 /*-------------------------------udstyr-------------------------------------*/
 
+/*ændring af position og størrelse af elementerne på undersiden: udstyr*/
 .udstyr-container .infografik{
     display: flex;
     justify-content: center;
@@ -627,6 +656,8 @@ border-left: #90081F;
 
 /*-------------------------------bluboversigt-------------------------------------*/
 
+/*ændring af position og størrelse af elementerne på undersiden: klubber*/
+
 .klub-container{
     display: flex;
     flex-direction: column;
@@ -676,6 +707,9 @@ color: #90081F;
 
 
 /*--------------------------------karosel------------------------------------------*/
+
+/*dette er styling for hvad der skulle have været en billede karussel på landing page.
+Men den virker desværre ikke og er blevet skrottet*/
 .slider {
     width: 100%;
     border: 1px solid red;
