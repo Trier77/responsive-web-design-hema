@@ -107,7 +107,9 @@ h2{
     margin-bottom: 2rem;
 }
 
-/*logo i både top og bund*/
+
+/*-------------------------------lp-------------------------------------*/
+/*logo i både top og bund på landingpage*/
 .op-logo {
     display: flex;
     flex-direction: column;
@@ -118,10 +120,11 @@ h2{
     
 }
 
+/* logo kin i bund på landing page*/
 .op-logo .sigil {
     width: 20vw;
 }
-/*-------------------------------lp-------------------------------------*/
+
 /*landingpage elementer*/
 .kommende-be{
     margin-left: 15vw;
@@ -710,7 +713,8 @@ color: #90081F;
 
 /*dette er styling for hvad der skulle have været en billede karussel på landing page.
 Men den virker desværre ikke og er blevet skrottet*/
-.slider {
+
+/*.slider {
     width: 100%;
     border: 1px solid red;
     height: var(--height);
@@ -741,7 +745,7 @@ Men den virker desværre ikke og er blevet skrottet*/
         left: calc(var(--width) * -1);
     }
 
-}
+}*/
 /*--------------------------------karosel slut------------------------------------------*/
 
 
